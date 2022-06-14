@@ -1,0 +1,73 @@
+/* Visualisation */
+
+.bckgnd{
+  width: 100%;
+  margin-top: -390px;
+  }
+  
+  .blinking-cursor {
+    user-select: none;
+    animation: blink 1s steps(2, start) infinite;
+  }
+  @keyframes blink {
+    to {
+      visibility: hidden;
+    }
+  }
+.nompaire{
+    position: relative;
+    top: 1vh;
+    font-size: 75px;
+    text-align: center;
+    color: #590303;
+    font-style: italic;
+    font-weight: 900;
+    z-index: 1;
+}
+
+.element2{
+  position: relative;
+  display: flex;
+  top: 50vh;
+  margin: 0;
+  font-size: 50px;
+  border: solid;
+  color: #fff;
+  text-align: center;
+  flex-direction: column;
+}
+.element3{
+  position: relative;
+  top: 62vh;
+  font-size: 2vh;
+  background-color: #fff;
+  width: 40%;
+  border-radius: 15px;
+  padding: 10px;
+  text-align: center;
+}
+/* reponsive  iphone 12 pro  400 x 827 px */
+@media only screen and (max-width: 400px) {
+  .bckgnd{
+    position: relative;
+    width: 325%;
+    margin-top: -256px;
+    left: -480px;
+  }
+  .nompaire{
+    font-size: 20px;
+}
+  .element2{
+    position: relative;
+    z-index: 1;
+    font-size: 25px;
+    top: 380px;
+
+  }
+  .element3{
+    position: relative;
+    top: 70vh;
+    font-size: 8px;
+    z-index: 1;
+  }
+}
